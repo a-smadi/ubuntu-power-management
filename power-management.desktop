@@ -1,0 +1,28 @@
+[Desktop Entry]
+Version=1.0
+Name=Power Management
+# Only KDE 4 seems to use GenericName, so we reuse the KDE strings.
+# From Ubuntu's language-pack-kde-XX-base packages, version 9.04-20090413.
+GenericName=Power Management
+# Gnome and KDE 3 uses Comment.
+Comment=Manage Power Consumption Modes
+Terminal=false
+Icon=unity-power-panel
+Type=Application
+Actions=performance-mode;power-saver-mode;movie-power-saver-mode;battery-stretch-mode;
+
+[Desktop Action performance-mode]
+Name=Performance Mode
+Exec=/usr/local/bin/performance-mode.sh
+
+[Desktop Action power-saver-mode]
+Name=Power Saver Mode
+Exec=/usr/local/bin/power-saver-mode.sh
+
+[Desktop Action movie-power-saver-mode]
+Name=Movie Power Saver Mode
+Exec=/usr/local/bin/movie-power-saver-mode.sh
+
+[Desktop Action battery-stretch-mode]
+Name=Battery Stretch Mode
+Exec=/usr/local/bin/battery-stretch-mode.sh
