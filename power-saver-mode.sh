@@ -2,7 +2,7 @@
 pkexec su -c "echo 0 > /sys/devices/platform/sony-laptop/kbd_backlight"
 
 # dim screen's backlight
-xbacklight -set 40
+xbacklight -set 35
 
 # notify user
 pkill notify-osd
